@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "17f1c391-c668-4f43-885d-ea79fd6a0660",
+		"name": "Orah-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5145708"
+	},
+	"item": [
+		{
+			"name": "get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/student/get-all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"student",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a roll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Admin\",\n    \"completed_at\": \"2022-12-04\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/roll/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"roll",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student Roll states to the roll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"student_id\": 6,\n        \"roll_id\": 1,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 2,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 3,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 4,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 5,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 6,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 7,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 8,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 9,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 10,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 11,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 12,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 13,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 14,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 15,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 16,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 17,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 18,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 19,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 6,\n        \"roll_id\": 20,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 1,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 2,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 3,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 4,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 5,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 6,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 7,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 8,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 9,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 10,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 11,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 12,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 13,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 14,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 15,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 16,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 17,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 18,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 19,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 7,\n        \"roll_id\": 20,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 1,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 2,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 3,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 4,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 5,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 6,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 7,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 8,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 9,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 10,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 11,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 12,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 13,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 14,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 15,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 16,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 17,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 18,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 19,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 8,\n        \"roll_id\": 20,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 1,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 2,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 3,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 4,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 5,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 6,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 7,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 8,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 9,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 10,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 11,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 12,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 13,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 14,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 15,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 16,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 17,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 18,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 19,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 9,\n        \"roll_id\": 20,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 1,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 2,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 3,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 4,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 5,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 6,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 7,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 8,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 9,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 10,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 11,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 12,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 13,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 14,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 15,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 16,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 17,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 18,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 19,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 10,\n        \"roll_id\": 20,\n        \"state\": \"absent\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 1,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 2,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 3,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 4,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 5,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 6,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 7,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 8,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 9,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 10,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 11,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 12,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 13,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 14,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 15,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 16,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 17,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 18,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 19,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 11,\n        \"roll_id\": 20,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 1,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 2,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 3,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 4,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 5,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 6,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 7,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 8,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 9,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 10,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 11,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 12,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 13,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 14,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 15,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 16,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 17,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 18,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 19,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 12,\n        \"roll_id\": 20,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 1,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 2,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 3,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 4,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 5,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 6,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 7,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 8,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 9,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 10,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 11,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 12,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 13,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 14,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 15,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 16,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 17,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 18,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 19,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 13,\n        \"roll_id\": 20,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 1,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 2,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 3,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 4,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 5,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 6,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 7,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 8,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 9,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 10,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 11,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 12,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 13,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 14,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 15,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 16,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 17,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 18,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 19,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 14,\n        \"roll_id\": 20,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 1,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 2,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 3,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 4,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 5,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 6,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 7,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 8,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 9,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 10,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 11,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 12,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 13,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 14,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 15,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 16,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 17,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 18,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 19,\n        \"state\": \"late\"\n    },\n    {\n        \"student_id\": 15,\n        \"roll_id\": 20,\n        \"state\": \"late\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/roll/add-student-states",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"roll",
+						"add-student-states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - Create a group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"test-group-todelete\",\n    \"number_of_weeks\":100,\n    \"roll_states\":\"bakwaas\",\n    \"incidents\":100,\n    \"ltmt\":\"=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/group/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - get the group list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/group/get-all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - Update a group",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number_of_weeks\":2\n    \n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/group/update/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						"update",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - delete a group",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/group/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - Get students in a group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/group/get-students-in-group",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						"get-students-in-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done - Run the group filters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/group/run-group-filters",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group",
+						"run-group-filters"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:4001"
+		}
+	]
+}
