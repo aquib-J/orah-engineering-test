@@ -29,9 +29,28 @@ export class GroupController {
   }
 
   async updateGroup(request: Request, response: Response, next: NextFunction) {
-    // Task 1: 
+    const {
+      body: group,
+      params: { id },
+    } = request
+
+    let updateGroupInput: UpdateGroupInput
+    let groupToUpdate = await this.groupRepository.findOne(id)
+    if (groupToUpdate) {
+      updateGroupInput = {
+        id: Number(id),
+        name: group.name,
+        number_of_weeks: group.number_of_weeks,
+        roll_states: group.roll_states,
+        incidents: group.incidents,
+        ltmt: group.ltmt,
+      }
+      groupToUpdate.prepareToUpdate(updateGroupInput)
+      return this.groupRepository.save(groupToUpdate)
+    }
+
+    return { message: "Error in fetching the required resource" }
     
-    // Update a Group
   }
 
   async removeGroup(request: Request, response: Response, next: NextFunction) {
