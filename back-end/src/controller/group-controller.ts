@@ -4,10 +4,10 @@ import { Group } from "../entity/group.entity"
 import { CreateGroupInput, UpdateGroupInput } from "../interface/group.interface"
 
 export class GroupController {
-  private groupRepository = getRepository(Group);
+  private groupRepository = getRepository(Group)
 
   async allGroups(request: Request, response: Response, next: NextFunction) {
-    return this.groupRepository.find();
+    return this.groupRepository.find()
   }
 
   async createGroup(request: Request, response: Response, next: NextFunction) {
@@ -50,29 +50,28 @@ export class GroupController {
     }
 
     return { message: "Error in fetching the required resource" }
-    
   }
 
   async removeGroup(request: Request, response: Response, next: NextFunction) {
-    // Task 1: 
-    
-    // Delete a Group
+    const {
+      params: { id },
+    } = request
+    let groupToDelete = await this.groupRepository.findOne(id)
+    if (groupToDelete) {
+      return await this.groupRepository.remove(groupToDelete)
+    }
+    return { message: "The Requested Resource doesnt exist" }
   }
 
   async getGroupStudents(request: Request, response: Response, next: NextFunction) {
-    // Task 1: 
-        
+    // Task 1:
     // Return the list of Students that are in a Group
   }
 
-
   async runGroupFilters(request: Request, response: Response, next: NextFunction) {
     // Task 2:
-  
     // 1. Clear out the groups (delete all the students from the groups)
-
     // 2. For each group, query the student rolls to see which students match the filter for the group
-
     // 3. Add the list of students that match the filter to the group
   }
 }
